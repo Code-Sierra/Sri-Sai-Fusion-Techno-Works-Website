@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #header {
+        position: sticky;
+        top: 0px;
+        z-index: 1400;
+    }
+    /* navbar*/
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-radius: 5px;
+        height: 100px;
+        transition: 0.5s;
+        backdrop-filter: blur(0.2rem);
+        box-shadow: 0 8px 10px -10px #111;
+        background: url("Untitled-2.png") center no-repeat;
+        background-size: 150vw 150px;
+        background-color: rgb(48, 48, 48, 0.8);
+    }
+    
+    .logo1 {
+        margin: auto 0;
+        cursor: pointer;
+        z-index: 1000;
+        width: auto;
+        max-height: 4.56em;
+        height: 8vw;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 2vw;
+        transition: all 0.4s;
+    }
+    
+    .logo2 {
+        margin: auto 0;
+        cursor: pointer;
+        z-index: 1000;
+        width: auto;
+        max-height: 2em;
+        height: 4vw;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 2vw;
+        transition: all 0.4s;
+    }
+    /* NAVBAR MENU */
+    
+    .menu {
+        display: flex;
+        gap: 1.1vw;
+        font-size: 1.3vw;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        right: 1%;
+        -ms-transform: translate(-1%, -50%);
+        transform: translate(-1%, -50%);
+        text-decoration: none;
+    }
+    
+    .box a {
+        text-decoration: none;
+        padding: 0.5em 0.8em;
+        color: #fff;
+        transition: all 0.2s ease-in;
+    }
+    
+    .box a:hover {
+        background-color: #ffffff;
+        transition: all 0.5s ease;
+        padding: 1em 0.8em;
+        border-radius: 0.5em;
+        color: #000;
+        /* box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 0.6rem #ff5e2d, 0 0 0.8rem #ff5e2d, 0 0 2.8rem #ff5e2d, inset 0 0 1.3rem #ff5e2d; */
+    }
+    
+    .ion_icon {
+        font-size: 20px;
+        margin: -5px -1px 0 0;
+        --ionicon-stroke-width: 30px;
+        vertical-align: middle;
+    }
+    /*HAMBURGER MENU*/
+    
+    .hamburger {
+        display: none;
+        margin: 0 5vw 0 0;
+    }
+    
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #ffffff;
+    }
+    /* APPLYING MEDIA QUERIES */
+    
+    @media (max-width: 768px) {
+        .navbar {
+            position: sticky;
+            font-size: 18px;
+            top: 0px;
+            max-width: 2000px;
+            border-radius: 5px;
+            max-height: 80px;
+            transition: 0.5s;
+            z-index: 1400;
+            backdrop-filter: blur(0.2rem);
+            box-shadow: 0 8px 10px -10px #111;
+            background: url("Untitled-2.png") center no-repeat;
+            background-size: 150vw 200px;
+            background-color: rgb(48, 48, 48, 0.8);
+        }
+        .logo1 {
+            margin: auto 0;
+            cursor: pointer;
+            z-index: 1000;
+            width: auto;
+            max-height: 4em;
+            height: 8vw;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 2vw;
+            transition: all 0.4s;
+        }
+        .nav-menu {
+            position: fixed;
+            gap: 6.2vw;
+            display: flex;
+            left: -100%;
+            top: 60px;
+            min-height: 112vw;
+            font-size: 18px;
+            flex-direction: column;
+            background-color: #fff;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.5s;
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            opacity: 0;
+        }
+        .nav-menu.active {
+            left: 1%;
+            opacity: 1;
+        }
+        .box a {
+            text-decoration: none;
+            padding: 0.8em 0;
+            position: relative;
+            top: 56vw;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            border-radius: 0.4em;
+            min-width: 500px;
+            transition: all 0.2s ease-in;
+        }
+        .box a:hover {
+            background-color: #f1195e;
+            width: 100px;
+            height: auto;
+            transition: all 0.5s ease;
+            padding: 0.4em 0.8em;
+            border-radius: 0.5em;
+            color: rgb(255, 255, 255);
+            /* box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 0.6rem #ff5e2d, 0 0 0.8rem #ff5e2d, 0 0 2.8rem #ff5e2d, inset 0 0 1.3rem #ff5e2d; */
+        }
+        .hamburger {
+            display: block;
+            cursor: pointer;
+        }
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+            background-color: #000000;
+        }
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+            background-color: #000000;
+        }
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+            background-color: #000000;
+        }
+        .swiper {
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: -100px;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar" id="navbar">
+
+        <a ref="home.html">
+            <img class="logo1 front" src="images/logo/main.png" alt="">
+            <img class="logo2 back" style="opacity: 0; z-index:1;" src="images/logo/logo 1-01.png" alt="">
+        </a>
+
+
+        <div class="menu nav-menu">
+            <div class="box">
+                <a href="home.html" class="">
+                    <ion-icon class="ion_icon" name="home-outline"></ion-icon>
+                    Home
+                </a>
+            </div>
+            <div class="box">
+                <a href="abt.html" class=" ">
+                    <ion-icon class="ion_icon" name="people-outline"></ion-icon>
+                    About Us
+                </a>
+            </div>
+            <div class="box">
+                <a href="project.html" class=" ">
+                    <ion-icon class="ion_icon" name="construct-outline"></ion-icon>
+                    Project Segment
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="machinery.html" class=" ">
+                    <ion-icon class="ion_icon" name="settings-outline"></ion-icon>
+                    Machinery
+                </a>
+            </div>
+            <div class="box">
+                <a href="contact.html " class=" ">
+                    <ion-icon class="ion_icon" name="call-outline"></ion-icon>
+                    Contact US
+                </a>
+            </div>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+</script>
+
+
+</html>
