@@ -13,18 +13,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Sri Sai Fusion Home</title>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script>
-        $(function() {
-            $("#header").load("hflink/header.html");
-            $("#footer").load("hflink/footer.html");
-        });
-    </script>
-
 </head>
 
 <body>
     <div id="header"></div>
+
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -252,101 +245,21 @@
         </div>
     </div>
 
-
-
     <h1 class="intro-head" style="margin-top: -70px;">OUR CLIENTS</h1>
 
     <img style="height: auto; width:80%; display: block; margin: -10px auto 60px auto ; " src="images/clients.jpg " alt=" ">
 
     <div id="footer"></div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js "></script>
-    <script>
-        var swiper = new Swiper(".mySwiper ", {
-            spaceBetween: 10,
-            speed: 800,
-            centeredSlides: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            grabCursor: true,
-            effect: "creative",
-            creativeEffect: {
-                prev: {
-                    shadow: true,
-                    translate: [0, 0, -400],
-
-                },
-                next: {
-                    translate: ["100% ", 0, 0],
-                },
-            },
-        });
-    </script>
-    <script>
-        var swiper = new Swiper(".mySwiper1", {
-            slidesPerView: 4,
-            spaceBetween: 0,
-            loop: true,
-            autoplay: {
-                delay: 1000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-    <script>
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 520 || document.documentElement.scrollTop > 520) {
-                document.getElementById("navbar").style.height = "55px";
-                document.querySelector(".menu").style.fontSize = "1.1vw";
-                document.querySelector(".back").style.opacity = 1;
-                document.querySelector(".front").style.opacity = 0;
-            } else {
-                document.getElementById("navbar").style.height = "100px";
-                document.querySelector(".menu").style.fontSize = "1.3vw";
-                document.querySelector(".front").style.opacity = 1;
-                document.querySelector(".back").style.opacity = 0;
-            }
-        }
-    </script>
-  <script>
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-menu");
-
-    hamburger.addEventListener("click", mobileMenu);
-
-    function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-    }
-
-    const navLink = document.querySelectorAll(".nav-link");
-
-    navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-    function closeMenu() {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-    }
-</script>
-
     <script src="js.js"></script>
-
-
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#header").load("hflink/header.html");
+            $("#footer").load("hflink/footer.html");
+        });
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
