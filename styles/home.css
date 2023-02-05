@@ -8,6 +8,11 @@
     box-sizing: border-box;
     margin: 0;
 }
+#header {
+    position: sticky;
+    top: 0px;
+    z-index: 1400;
+}
 
 
 /* navbar*/
@@ -20,9 +25,6 @@
     border-radius: 5px;
     height: 100px;
     transition: 0.5s;
-    position: sticky;
-    top: 0px;
-    z-index: 1400;
     backdrop-filter: blur(0.2rem);
     box-shadow: 0 8px 10px -10px #111;
     background: url("Untitled-2.png") center no-repeat;
