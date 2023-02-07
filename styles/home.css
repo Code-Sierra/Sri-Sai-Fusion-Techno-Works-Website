@@ -131,6 +131,7 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
+    margin-top: 50px;
 }
 
 .head-content {
@@ -459,7 +460,7 @@ footer {
         backdrop-filter: blur(0.2rem);
         box-shadow: 0 8px 10px -10px #111;
         background: url("Untitled-2.png") center no-repeat;
-        background-size: 150vw 200px;
+        background-size: 100vw 100px;
         background-color: rgb(48, 48, 48, 0.8);
     }
     .logo1 {
@@ -467,8 +468,21 @@ footer {
         cursor: pointer;
         z-index: 1000;
         width: auto;
-        max-height: 4em;
-        height: 8vw;
+        max-height: 5em;
+        height: 12vw;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 2vw;
+        transition: all 0.4s;
+    }
+    .logo2 {
+        margin: auto 0;
+        cursor: pointer;
+        z-index: 1000;
+        width: auto;
+        max-height: 10em;
+        height: 5.8vw;
         position: absolute;
         top: 0;
         bottom: 0;
