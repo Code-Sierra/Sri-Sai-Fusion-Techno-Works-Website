@@ -8,6 +8,7 @@
     box-sizing: border-box;
     margin: 0;
 }
+
 #header {
     position: sticky;
     top: 0px;
@@ -375,7 +376,7 @@ footer {
     content: '';
     top: -20px;
     height: 2px;
-    width: 100%;
+    width: 91.5vw;
     background: #FCB21C;
 }
 
@@ -406,6 +407,8 @@ footer {
     font-size: 1rem;
     color: #fff;
     width: 100px;
+    margin-left: 10px;
+    width: 80vw;
 }
 
 .center .content .phone {
@@ -497,7 +500,7 @@ footer {
     position: relative;
     text-align: center;
     height: 200px;
-    width: 100%;
+    width: 92vw;
 }
 
 .gmap_canvas {
