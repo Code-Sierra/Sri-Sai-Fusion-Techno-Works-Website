@@ -16,23 +16,59 @@ function scrollFunction() {
     }
 }
 
+var swiper = new Swiper(".mySwiper ", {
+    spaceBetween: 10,
+    speed: 800,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+        prev: {
+            shadow: true,
+            translate: [0, 0, -400],
 
+        },
+        next: {
+            translate: ["100% ", 0, 0],
+        },
+    },
+});
 
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-menu");
-
-    hamburger.addEventListener("click", mobileMenu);
-
-    function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-    }
-
-    const navLink = document.querySelectorAll(".nav-link");
-
-    navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-    function closeMenu() {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-    }
+var swiper = new Swiper(".mySwiper1", {
+    slidesPerView: 4,
+    spaceBetween: 0,
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 0
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 4,
+            spaceBetween: 0
+        }
+    },
+    loop: true,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
