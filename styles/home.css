@@ -229,6 +229,7 @@
 .intro-head {
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
 
 .head-content {
