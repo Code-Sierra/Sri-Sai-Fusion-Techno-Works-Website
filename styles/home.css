@@ -371,21 +371,19 @@ footer {
     position: relative;
 }
 
+.left .boxer .content {
+    margin: 30px 0 0 0;
+    position: relative;
+    width: 50%;
+}
+
 .boxer .content:before {
     position: absolute;
     content: '';
     top: -20px;
     height: 2px;
-    width: 91.5vw;
+    width: 100%;
     background: #FCB21C;
-}
-
-.boxer .content::after {
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 15%;
-    top: -10px;
 }
 
 .left .content p {
@@ -406,9 +404,8 @@ footer {
 .center .content .text {
     font-size: 1rem;
     color: #fff;
-    width: 100px;
-    margin-left: 10px;
-    width: 80vw;
+    width: 79%;
+    margin-left: 12px;
 }
 
 .center .content .phone {
@@ -438,6 +435,14 @@ footer {
     }
     .main-content .boxer {
         margin: 5px 0;
+    }
+    .boxer .content:before {
+        position: absolute;
+        content: '';
+        top: -20px;
+        height: 2px;
+        width: 92vw;
+        background: #FCB21C;
     }
 }
 
@@ -500,7 +505,7 @@ footer {
     position: relative;
     text-align: center;
     height: 200px;
-    width: 92vw;
+    width: 100%;
 }
 
 .gmap_canvas {
