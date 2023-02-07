@@ -1,50 +1,62 @@
-<nav class="navbar" id="navbar">
+<!DOCTYPE html>
+<html lang="en">
 
-    <a ref="home.html">
-        <img class="logo1 front" src="images/logo/main.png" alt="">
-        <img class="logo2 back" style="opacity: 0; z-index:1;" src="images/logo/logo 1-01.png" alt="">
-    </a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+
+        <a ref="home.html">
+            <img class="logo1 front" src="images/logo/main.png" alt="">
+            <img class="logo2 back" style="opacity: 0; z-index:1;" src="images/logo/logo 1-01.png" alt="">
+        </a>
 
 
-    <div class="menu nav-menu">
-        <div class="box">
-            <a href="home.html" class="">
-                <ion-icon class="ion_icon" name="home-outline"></ion-icon>
-                Home
-            </a>
-        </div>
-        <div class="box">
-            <a href="abt.html" class=" ">
-                <ion-icon class="ion_icon" name="people-outline"></ion-icon>
-                About Us
-            </a>
-        </div>
-        <div class="box">
-            <a href="project.html" class=" ">
-                <ion-icon class="ion_icon" name="construct-outline"></ion-icon>
-                Project Segment
-            </a>
-        </div>
+        <div class="menu nav-menu">
+            <div class="box">
+                <a href="index.html" class="">
+                    <ion-icon class="ion_icon" name="home-outline"></ion-icon>
+                    Home
+                </a>
+            </div>
+            <div class="box">
+                <a href="abt.html" class=" ">
+                    <ion-icon class="ion_icon" name="people-outline"></ion-icon>
+                    About Us
+                </a>
+            </div>
+            <div class="box">
+                <a href="project.html" class=" ">
+                    <ion-icon class="ion_icon" name="construct-outline"></ion-icon>
+                    Project Segment
+                </a>
+            </div>
 
-        <div class="box">
-            <a href="machinery.html" class=" ">
-                <ion-icon class="ion_icon" name="settings-outline"></ion-icon>
-                Machinery
-            </a>
+            <div class="box">
+                <a href="machinery.html" class=" ">
+                    <ion-icon class="ion_icon" name="settings-outline"></ion-icon>
+                    Machinery
+                </a>
+            </div>
+            <div class="box">
+                <a href="contact.html " class=" ">
+                    <ion-icon class="ion_icon" name="call-outline"></ion-icon>
+                    Contact US
+                </a>
+            </div>
         </div>
-        <div class="box">
-            <a href="contact.html " class=" ">
-                <ion-icon class="ion_icon" name="call-outline"></ion-icon>
-                Contact US
-            </a>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-    </div>
-    <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
-</nav>
+    </nav>
+</body>
 <script>
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
@@ -65,3 +77,6 @@
         navMenu.classList.remove("active");
     }
 </script>
+
+
+</html>
