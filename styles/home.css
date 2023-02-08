@@ -467,7 +467,7 @@ footer {
         cursor: pointer;
         z-index: 1000;
         width: auto;
-        max-height: 5em;
+        max-height: 4.0em;
         height: 12vw;
         position: absolute;
         top: 0;
@@ -493,8 +493,8 @@ footer {
         gap: 6.2vw;
         display: flex;
         left: -100%;
-        top: 60px;
-        min-height: 112vw;
+        top: 120px;
+        min-height: 470px;
         font-size: 18px;
         flex-direction: column;
         background-color: #fff;
