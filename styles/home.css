@@ -490,17 +490,18 @@ footer {
     }
     .nav-menu {
         position: fixed;
-        gap: 6.2vw;
+        gap: 10vw;
         display: flex;
         left: -100%;
-        top: 120px;
-        min-height: 500px;
+        top: 0px;
+        min-height: 550px;
         font-size: 18px;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
         border-radius: 10px;
         text-align: center;
+        margin-top: 200px;
         transition: all 0.5s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         opacity: 0;
