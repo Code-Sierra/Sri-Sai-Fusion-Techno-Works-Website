@@ -494,7 +494,7 @@ footer {
         display: flex;
         left: -100%;
         top: 120px;
-        min-height: 470px;
+        min-height: 500px;
         font-size: 18px;
         flex-direction: column;
         background-color: #fff;
