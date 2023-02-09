@@ -493,8 +493,8 @@ footer {
         gap: 10vw;
         display: flex;
         left: -100%;
-        top: 0px;
-        min-height: 550px;
+        top: 0;
+        min-height: 80vh;
         font-size: 18px;
         flex-direction: column;
         background-color: #fff;
