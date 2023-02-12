@@ -1,195 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box
-        }
-
-        body {
-            font-family: "Lato", sans-serif;
-        }
-
-        /* Style the tab */
-
-        .tab {
-            float: left;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-            width: 30%;
-            height: 300px;
-        }
-
-        /* Style the buttons inside the tab */
-
-        .tab button {
-            display: block;
-            background-color: inherit;
-            color: black;
-            padding: 22px 16px;
-            width: 100%;
-            border: none;
-            outline: none;
-            text-align: left;
-            cursor: pointer;
-            transition: 0.3s;
-            font-size: 17px;
-        }
-
-        /* Change background color of buttons on hover */
-
-        .tab button:hover {
-            background-color: #ddd;
-        }
-
-        /* Create an active/current "tab button" class */
-
-        .tab button.active {
-            background-color: #ccc;
-        }
-
-        /* Style the tab content */
-
-        .tabcontent {
-            float: left;
-            padding: 0px 10px;
-            border: 1px solid #ccc;
-            width: 70%;
-            border-left: none;
-            min-height: 513px;
-        }
-    </style>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Sri Sai Fusion About</title>
 </head>
 
 <body>
-
-    <nav class="navbar">
-        <!-- LOGO -->
-        <div class="logo">
-            <img style="height: 110px;width:auto;margin-top: -40px;" src="Logo png.png" alt="">
+    <div id="header"></div>
+    <div style="margin-top: 50px;">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'INTRODUCTION')" id="defaultOpen">INTRO</button>
+            <button class="tablinks" onclick="openCity(event, 'VISION')">VISION</button>
+            <button class="tablinks" onclick="openCity(event, 'MISSION')">MISSION</button>
+            <button class="tablinks" onclick="openCity(event, 'BOARD')">OUR BOARD OF DIRECTORS</button>
+            <button class="tablinks" onclick="openCity(event, 'QUALITY')">QUALITY</button>
+            <button class="tablinks" onclick="openCity(event, 'CERTIFICATE')">CERTIFICATE</button>
         </div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-            <!-- USING CHECKBOX HACK -->
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-            <!-- NAVIGATION MENUS -->
-            <div class="menu">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="abt.html">About Us</a></li>
-                <li class="services">
-                    <a href="project.HTML">Project Segment</a>
-                    <!-- DROPDOWN MENU -->
-
-
-                <li class="services">
-                    <a href="machinery.html">Machinery</a>
-                </li>
-                <li><a href="contact.html">Contact US</a></li>
+        <div id="INTRODUCTION" class="tabcontent">
+            <h3>INTRODUCTION</h3>
+            <p>
+                Sri Sai Fusion Techno Works is new to this world, but we have a well experience and innovative ideas for its ability to provide quick, reliable turnaround on all types of industrial welding and machining process jobs. Our Versatile production capabilities
+                enable us to meet the needs of customers in a wide range of valve industries. We work from customer specifications to produce parts and equipment that meet industry standards. The company total areas of 4200 Sq.ft and it is located at
+                West Tambaram(Sri Sairam Engineering College Campus).
+            </p>
+        </div>
+        <div id="VISION" class="tabcontent">
+            <h3>VISION</h3>
+            <p>
+                “Sri Sai Fusion Techno Works is dedicated satisfy our customers requirements through a process of continuous improvement. In terms of Low cost Producer, Strong Balance Sheet, Outstanding Customer service and Empowered Employees along with their Safety”.
+            </p>
+        </div>
+        <div id="MISSION" class="tabcontent">
+            <h3>MISION</h3>
+            <p>“To lead in the invention, development and manufacture of the industry’s most advanced technologie.</p>
+        </div>
+        <div id="BOARD" class="tabcontent">
+            <h3>OUR BOARD OF DIRECTORS</h3>
+            <p>
+                K.AVUDAIYAPPAN - TECHNICAL PARTNER <br /> BE(Production dept) <br />
+                <br /> A.VENKATESH - FINANCIAL PARTNER <br /> BE, MBA <br />
+                <br /> P.DEEPAK - MARKETING PARTNER <br /> BE(Production dept)
+            </p>
+        </div>
+        <div id="QUALITY" class="tabcontent">
+            <h3>QUALITY</h3>
+            <p>
+                Sri Sai Fusion techno Works has established the following quality policy. The Objective of Sri Sai Fusion Techno Works, to be the Quality Leader in meeting the needs and expectations of their Customers. In achieving quality of product will be controlled
+                and assured through all stages of planning, Material procurement, processing and delivery by a quality management system complying with the requirements of ISO 9001: Quality Management system. Because quality control is top priority in
+                weld overlay, we adhere to our weld procedure and inspection systems manual. Sri Sai Fusion techno Works will continually improve the effectiveness and suitability of the Quality Management System through the collection and analysis of
+                appropriate data identifying improvement projects to enhance the efficiency of the system. To maintain zero % customer
+            </p>
+        </div>
+        <div id="CERTIFICATE" class="tabcontent">
+            <h3>CERTIFICATE</h3>
+            <img id="myImg" src="images/certificates/udyam.jpg" alt="UDYAM CERTIFICATE" style="width:100%;max-width:300px">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <br>
+                <div id="caption"></div>
             </div>
-        </ul>
-    </nav>
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
 
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("myImg");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
 
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
 
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+            </script>
+            <img id="myImg2" src="images/certificates/isoregis.jpg" alt="CERTIFCATE OF REGISTRATION" style="width:100%;max-width:300px; max-height: 375px;">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <br>
+                <div id="caption"></div>
 
+            </div>
 
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
 
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'INTRODUCTION')" id="defaultOpen">RDM</button>
-        <button class="tablinks" onclick="openCity(event, 'VISION')">100 KG POSITIONER</button>
-        <button class="tablinks" onclick="openCity(event, 'MISSION')">2 TON ZIB CRANE</button>
-        <button class="tablinks" onclick="openCity(event, 'BOARD')">MIG POWER SOURCE</button>
-        <button class="tablinks" onclick="openCity(event, 'QUALITY')">LMW CNC MACHINE</button>
-        <button class="tablinks" onclick="openCity(event, 'OUR COMMITEMENTS')">LMW VMC MACHINE</button>
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("myImg2");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
 
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+            </script>
+        </div>
     </div>
+    <div class="footer-spacer"></div>
 
-    <div id="INTRODUCTION" class="tabcontent">
-        <h3>RDM</h3>
-        <span><img style="height: 300px; width: 300px;" src="images/rdm.png" alt="img"></span>
-
-
-
-
-    </div>
-
-    <div id="VISION" class="tabcontent">
-        <h3>100 KG POSITIONER</h3>
-        <img style="height: 300px; width: 300px;" src="images/Positioner.jpeg" alt="img">
-
-
-    </div>
-
-    <div id="MISSION" class="tabcontent">
-        <h3>2 TON ZIB CRANE</h3>
-        <img style="height: 300px; width: 300px;" src="images/crane.png" alt="img">
-
-    </div>
-
-    <div id="BOARD" class="tabcontent">
-        <h3>MIG POWER SOURCE</h3>
-        <img style="height: 300px; width: 300px;" src="images/power.png" alt="img">
-
-
-    </div>
-    <div id="QUALITY" class="tabcontent">
-        <h3>LMW CNC MACHINE</h3>
-        <img style="height: 300px; width: 300px;" src="images/CNC2.png" alt="img">
-    </div>
-    <div id="OUR COMMITEMENTS" class="tabcontent">
-        <h3>LMW VMC MACHINE</h3>
-        <img style="height: 300px; width: 300px;" src="images/vnc.png" alt="img">
-    </div>
-
-
-
-
-
-
+    <div id="footer"></div>
     <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
+        $(function() {
+            $("#header").load("hflink/header.html");
+            $("#footer").load("hflink/footer.html");
+        });
     </script>
-
-
-    <div class="footer-basic ">
-        <footer>
-            <div class="social ">
-                <a href="# "><i class="icon ion-social-instagram "></i></a>
-                <a href="# "><i class="icon ion-social-snapchat "></i></a>
-                <a href="# "><i class="icon ion-social-twitter "></i></a>
-                <a href="# "><i class="icon ion-social-facebook "></i></a>
-            </div>
-            <ul class="list-inline ">
-                <li class="list-inline-item "><a href="# ">Home</a></li>
-                <li class="list-inline-item "><a href="# ">Services</a></li>
-                <li class="list-inline-item "><a href="# ">About</a></li>
-                <li class="list-inline-item "><a href="# ">Terms</a></li>
-                <li class="list-inline-item "><a href="# ">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright ">Sri Sai Fusion © 2022</p>
-        </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js "></script>
+    <script src="js.js "></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
