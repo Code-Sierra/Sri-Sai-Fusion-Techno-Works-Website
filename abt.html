@@ -19,7 +19,7 @@
     <div id="header"></div>
     <div style="margin-top: 50px;">
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'INTRODUCTION')" id="defaultOpen">INTRODUCTION</button>
+            <button class="tablinks" onclick="openCity(event, 'INTRODUCTION')" id="defaultOpen">INTRO</button>
             <button class="tablinks" onclick="openCity(event, 'VISION')">VISION</button>
             <button class="tablinks" onclick="openCity(event, 'MISSION')">MISSION</button>
             <button class="tablinks" onclick="openCity(event, 'BOARD')">OUR BOARD OF DIRECTORS</button>
@@ -93,7 +93,7 @@
                     modal.style.display = "none";
                 }
             </script>
-            <img id="myImg2" src="images/certificates/isoregis.jpg" alt="CERTIFCATE OF REGISTRATION" style="width:100%;max-width:300px;height: 375px;">
+            <img id="myImg2" src="images/certificates/isoregis.jpg" alt="CERTIFCATE OF REGISTRATION" style="width:100%;max-width:300px; max-height: 375px;">
             <!-- The Modal -->
             <div id="myModal" class="modal">
                 <span class="close">&times;</span>
@@ -102,6 +102,7 @@
                 <div id="caption"></div>
 
             </div>
+
             <script>
                 // Get the modal
                 var modal = document.getElementById("myModal");
@@ -125,32 +126,14 @@
                 }
             </script>
         </div>
-        <script>
-            function openCity(evt, cityName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(cityName).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
-        </script>
     </div>
-    <div style="height: 50vw; width: 100%; display: block; margin: -10px auto 60px auto;"></div>
+    <div class="footer-spacer"></div>
 
     <div id="footer"></div>
     <script>
         $(function() {
-            $("#header ").load("hflink/header.html ");
-            $("#footer ").load("hflink/footer.html ");
+            $("#header").load("hflink/header.html");
+            $("#footer").load("hflink/footer.html");
         });
     </script>
     <script src="js.js "></script>
