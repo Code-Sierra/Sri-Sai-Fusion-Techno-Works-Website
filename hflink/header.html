@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar" id="navbar">
 
-        <a ref="index.html">
+        <a ref="home.html">
             <img class="logo1 front" src="images/logo/main.png" alt="">
             <img class="logo2 back" style="opacity: 0; z-index:1;" src="images/logo/logo 1-01.png" alt="">
         </a>
@@ -57,26 +57,6 @@
         </div>
     </nav>
 </body>
-<script>
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-menu");
-
-    hamburger.addEventListener("click", mobileMenu);
-
-    function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-    }
-
-    const navLink = document.querySelectorAll(".nav-link");
-
-    navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-    function closeMenu() {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-    }
-</script>
-
+<script src="../js.js"></script>
 
 </html>
