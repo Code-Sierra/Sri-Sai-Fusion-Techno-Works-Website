@@ -1,60 +1,4 @@
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
-var submitted = false;
-var modal = document.getElementById('pop');
-const btn = document.getElementById('btn')
-    // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-        const inputs = document.querySelectorAll('#f1, #l1, #num, #mail, #address, #message');
-        inputs.forEach(input => {
-            input.value = '';
-        });
-    }
-};
-
-btn.addEventListener('click', function handleClick(event) {
-    const inputs = document.querySelectorAll('#f1, #l1, #num, #mail, #address, #message');
-    inputs.forEach(input => {
-        input.value = '';
-    });
-});
-
-window.onscroll = function() {
-    scrollFunction()
-};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 520 || document.documentElement.scrollTop > 520) {
-        document.getElementById("navbar").style.height = "55px";
-        document.querySelector(".menu").style.fontSize = "1.1vw";
-        document.querySelector(".back").style.opacity = 1;
-        document.querySelector(".front").style.opacity = 0;
-    } else {
-        document.getElementById("navbar").style.height = "100px";
-        document.querySelector(".menu").style.fontSize = "1.3vw";
-        document.querySelector(".front").style.opacity = 1;
-        document.querySelector(".back").style.opacity = 0;
-    }
-}
-
-var swiper = new Swiper(".mySwiper ", {
+var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     speed: 800,
     centeredSlides: true,
@@ -110,3 +54,80 @@ var swiper = new Swiper(".mySwiper1", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+window.onscroll = function() {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 520 || document.documentElement.scrollTop > 520) {
+        document.getElementById("navbar").style.height = "55px";
+        document.querySelector(".menu").style.fontSize = "1.1vw";
+        document.querySelector(".back").style.opacity = 1;
+        document.querySelector(".front").style.opacity = 0;
+    } else {
+        document.getElementById("navbar").style.height = "100px";
+        document.querySelector(".menu").style.fontSize = "1.3vw";
+        document.querySelector(".front").style.opacity = 1;
+        document.querySelector(".back").style.opacity = 0;
+    }
+}
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+var submitted = false;
+var modal = document.getElementById('pop');
+const btn = document.getElementById('btn')
+    // When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        const inputs = document.querySelectorAll('#f1, #l1, #num, #mail, #address, #message');
+        inputs.forEach(input => {
+            input.value = '';
+        });
+    }
+};
+
+btn.addEventListener('click', function handleClick(event) {
+    const inputs = document.querySelectorAll('#f1, #l1, #num, #mail, #address, #message');
+    inputs.forEach(input => {
+        input.value = '';
+    });
+});
+
+
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
