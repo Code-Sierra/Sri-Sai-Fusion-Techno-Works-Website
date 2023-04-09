@@ -18,49 +18,50 @@
 <body>
     <div id="header"></div>
     <div style="margin-top: 50px;">
-
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'INTRODUCTION')" id="defaultOpen">HEAVY ENGINEERING</button>
-            <button class="tablinks" onclick="openCity(event, 'VISION')">EQUIPMENT MANUFACTURING</button>
-            <button class="tablinks" onclick="openCity(event, 'MISSION')">OIL AND GAS INDUSTRY</button>
-            <button class="tablinks" onclick="openCity(event, 'BOARD')">AUTOMATION INDUSTRIES</button>
-            <button class="tablinks" onclick="openCity(event, 'aaa')">COLLEGE PROJECTS</button>
+            <button class="tablinks" onclick="openCity(event, 'INTRODUCTION')" id="defaultOpen">RDM</button>
+            <button class="tablinks" onclick="openCity(event, 'VISION')">100 KG POSITIONER</button>
+            <button class="tablinks" onclick="openCity(event, 'MISSION')">2 TON ZIB CRANE</button>
+            <button class="tablinks" onclick="openCity(event, 'BOARD')">MIG POWER SOURCE</button>
+            <button class="tablinks" onclick="openCity(event, 'QUALITY')">LMW CNC MACHINE</button>
+            <button class="tablinks" onclick="openCity(event, 'OUR COMMITEMENTS')">LMW VMC MACHINE</button>
 
         </div>
 
         <div id="INTRODUCTION" class="tabcontent">
-            <h3>HEAVY ENGINEERING</h3>
-            <p>Manufacturing and supply of pressure vessel tanks. Chute, conveyors and etc</p>
+            <h3>RDM</h3>
+            <span><img style="height: auto; width: 50%;" src="images/machinery/rdm.png" alt="img"></span>
         </div>
 
         <div id="VISION" class="tabcontent">
-            <h3>EQUIPMENT MANUFACTURING</h3>
-            <p>Manufacturing and supply of bio toilet equipment, trolleys, conveyor, pallets and etc.
-            </p>
+            <h3>100 KG POSITIONER</h3>
+            <img style="height: auto; width: 50%;" src="images/machinery/Positioner.jpeg" alt="img">
         </div>
 
         <div id="MISSION" class="tabcontent">
-            <h3>OIL AND GAS INDUSTRY</h3>
-            <p>Manufacture and supply of wear resistant and corrosion resistant cladded parts such as valve seat rings, wedges, discs, pump seals, sleeves, shafts, spindles, wear rings, pipe joining and etc. Weld-overlaying of various alloys for various
-                OEMs. (Valves, pumps, plastic/ rubber moldings machineries, nuclear, etc.) Weld overlaying for repair and maintenance for worn – out parts for various industries. Specialised welding services for low heat input deposition methods to reduce
-                weld distortions.
-            </p>
+            <h3>2 TON ZIB CRANE</h3>
+            <img style="height: auto; width: 50%;" src="images/machinery/Zib crane.webp" alt="img">
         </div>
 
         <div id="BOARD" class="tabcontent">
-            <h3>AUTOMATION INDUSTRIES</h3>
-            <p>Manufacturing and supply of Welding positioner and column and boom and SPM machineries</p>
+            <h3>MIG POWER SOURCE</h3>
+            <img style="height: auto; width: 50%;" src="images/machinery/power.png" alt="img">
         </div>
-        <div id="aaa" class="tabcontent">
-            <h3>COLLEGE PROJECTS</h3>
-            <p>E BAJA VEHICLE ROLL CAGE FABRICATION <br> <br> M BAJA VEHICLE ROLL CAGE FABRICATION <br> <br> GO KART VEHICLE BASE FRAME FABRICATION <br> <br> E BIKE STRUCTURE FABRICATION <br> <br> EPICYCLE ROLL CAGE FABRICATION</p>
-        </div>
-    </div>
 
+        <div id="QUALITY" class="tabcontent">
+            <h3>LMW CNC MACHINE</h3>
+            <img style="height: auto; width: 50%;" src="images/machinery/CNC2.png" alt="img">
+        </div>
+
+        <div id="OUR COMMITEMENTS" class="tabcontent">
+            <h3>LMW VMC MACHINE</h3>
+            <img style="height: auto; width: 50%;" src="images/machinery/VNC.jpg" alt="img">
+        </div>
+
+    </div>
     <div class="footer-spacer"></div>
 
     <div id="footer"></div>
-    
     <script>
         $(function() {
             $("#header").load("hflink/header.html");
@@ -81,7 +82,6 @@
             evt.currentTarget.className += " active";
         }
         document.getElementById("defaultOpen").click();
-        
     </script>
     <script src="js.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
